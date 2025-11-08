@@ -27,9 +27,9 @@ const ExpandableCard = ({ title, summary, children, icon, accentColor = 'blue', 
   };
 
   return (
-    <div className={`card-elevated border-l-4 ${borderColors[accentColor]} overflow-hidden`}>
+    <div className={`card-elevated border-l-4 ${borderColors[accentColor]} overflow-hidden flex flex-col h-full`}>
       {/* Header Section */}
-      <div className="p-8">
+      <div className="p-8 flex flex-col flex-grow">
         <div className="flex items-start gap-4">
           {icon && (
             <div className={`flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br ${accentColors[accentColor]} flex items-center justify-center text-white text-2xl shadow-lg`}>
@@ -40,7 +40,7 @@ const ExpandableCard = ({ title, summary, children, icon, accentColor = 'blue', 
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 text-balance">
               {title}
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-balance">
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-balance flex-grow">
               {summary}
             </p>
           </div>
@@ -49,7 +49,7 @@ const ExpandableCard = ({ title, summary, children, icon, accentColor = 'blue', 
         {/* Toggle Button */}
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className={`mt-6 px-6 py-3 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 bg-gradient-to-r ${accentColors[accentColor]} text-white hover:shadow-lg hover:scale-105 active:scale-95`}
+          className={`mt-6 px-6 py-3 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 bg-gradient-to-r ${accentColors[accentColor]} text-white hover:shadow-lg hover:scale-105 active:scale-95 self-start`}
           aria-expanded={isExpanded}
           aria-label={isExpanded ? '내용 접기' : '내용 펼치기'}
         >

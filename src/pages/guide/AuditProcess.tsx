@@ -11,7 +11,7 @@ const AuditProcess = () => {
         </p>
       </div>
 
-      <div className="space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <ExpandableCard 
           title="1. 예비조사 (A00)"
           summary="감리 준비 단계: 감리계획서를 수립합니다."
