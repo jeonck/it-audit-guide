@@ -6,13 +6,6 @@ import ProjectTypeDifferences from './guide/ProjectTypeDifferences';
 export default function Home() {
   const tabs: TabItem[] = [
     {
-      id: 'process',
-      label: '감리 수행 절차',
-      icon: '🔄',
-      accentColor: 'blue',
-      content: <AuditProcess />,
-    },
-    {
       id: 'legal',
       label: '법적 근거',
       icon: '⚖️',
@@ -25,6 +18,13 @@ export default function Home() {
       icon: '⚙️',
       accentColor: 'green',
       content: <ProjectTypeDifferences />,
+    },
+    {
+      id: 'process',
+      label: '감리 수행 절차',
+      icon: '🔄',
+      accentColor: 'blue',
+      content: <AuditProcess />,
     },
   ];
 
@@ -39,7 +39,7 @@ export default function Home() {
         </p>
       </div>
 
-      <TabNavigation tabs={tabs} defaultTab="process" />
+      <TabNavigation tabs={tabs} defaultTab="legal" />
     </div>
   );
 }
