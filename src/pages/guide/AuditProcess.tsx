@@ -14,7 +14,7 @@ const AuditProcess = () => {
       <div className="space-y-6">
         <ExpandableCard 
           title="1. 예비조사 (A00)"
-          subtitle="감리 준비 단계: 감리계획서를 수립합니다."
+          summary="감리 준비 단계: 감리계획서를 수립합니다."
           defaultOpen={true}
         >
           <div className="space-y-4">
@@ -35,7 +35,7 @@ const AuditProcess = () => {
 
         <ExpandableCard 
           title="2. 현장감리 (B00)"
-          subtitle="문제점 확인 및 개선방향 도출: 감리수행결과보고서를 작성합니다."
+          summary="문제점 확인 및 개선방향 도출: 감리수행결과보고서를 작성합니다."
         >
           <div className="space-y-4">
             <div>
@@ -58,7 +58,7 @@ const AuditProcess = () => {
 
         <ExpandableCard 
           title="3. 시정조치 확인 (C00)"
-          subtitle="개선사항 조치 결과 확인: 시정조치확인보고서를 작성합니다."
+          summary="개선사항 조치 결과 확인: 시정조치확인보고서를 작성합니다."
         >
           <div className="space-y-4">
             <div>

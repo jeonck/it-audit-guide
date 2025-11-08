@@ -6,10 +6,11 @@ interface ExpandableCardProps {
   children: React.ReactNode;
   icon?: string;
   accentColor?: 'blue' | 'purple' | 'green' | 'orange';
+  defaultOpen?: boolean;
 }
 
-const ExpandableCard = ({ title, summary, children, icon, accentColor = 'blue' }: ExpandableCardProps) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+const ExpandableCard = ({ title, summary, children, icon, accentColor = 'blue', defaultOpen = false }: ExpandableCardProps) => {
+  const [isExpanded, setIsExpanded] = useState(defaultOpen);
 
   const accentColors = {
     blue: 'from-blue-500 to-blue-600',
