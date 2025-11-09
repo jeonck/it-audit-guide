@@ -41,6 +41,12 @@ const TabNavigation = ({ tabs, defaultTab }: TabNavigationProps) => {
       text: 'text-orange-600 dark:text-orange-400',
       gradient: 'from-orange-500 to-orange-600',
     },
+    red: {
+      border: 'border-red-500',
+      bg: 'bg-red-50 dark:bg-red-900/20',
+      text: 'text-red-600 dark:text-red-400',
+      gradient: 'from-red-500 to-red-600',
+    },
   };
 
   const activeTabData = tabs.find(tab => tab.id === activeTab);
