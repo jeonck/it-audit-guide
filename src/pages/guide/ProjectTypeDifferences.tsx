@@ -42,6 +42,15 @@ const ProjectTypeDifferences = () => {
       </div>
 
       <div className="p-6 bg-white rounded-lg shadow-md">
+        <h3 className="text-xl font-bold text-gray-800 mb-3">핵심 차이점</h3>
+        <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <li><strong>ISP 사업:</strong> 감리 영역은 주로 업무(전략), 기술(아키텍처), 정보화 계획에 초점을 맞추며, 정보화 목표와 전략 간의 일관성 및 개선 모델 도출의 적정성 등 미래 계획의 타당성과 충분성을 검토합니다.</li>
+          <li><strong>시스템 개발 사업:</strong> 감리 영역은 시스템 구조, 응용 시스템, 데이터베이스를 중심으로, 각 단계별 산출물 품질, 요구사항의 추적성, 일관성, 기능 구현의 완전성 등 구현 과정과 결과물의 적합성을 검토합니다.</li>
+          <li><strong>시스템 운영 사업:</strong> 감리 영역은 인프라와 <strong>개발 소프트웨어(유지보수)</strong>에 초점을 맞추며, 운영 절차, 서비스 수준(SLA), 용량 관리, 장애 관리, 보안 관리 등 서비스의 지속적인 제공과 품질을 검토합니다.</li>
+        </ul>
+      </div>
+
+      <div className="p-6 bg-white rounded-lg shadow-md">
         <h3 className="text-xl font-bold text-gray-800 mb-3">감리 방법론의 적용 방식</h3>
         <div className="space-y-4">
           <div>
