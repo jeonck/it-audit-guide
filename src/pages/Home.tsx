@@ -2,6 +2,7 @@ import TabNavigation, { TabItem } from '../components/TabNavigation';
 import AuditProcess from './guide/AuditProcess';
 import LegalBasis from './guide/LegalBasis';
 import ProjectTypeDifferences from './guide/ProjectTypeDifferences';
+import PhasedAudit from './guide/PhasedAudit';
 
 export default function Home() {
   const tabs: TabItem[] = [
@@ -18,6 +19,13 @@ export default function Home() {
       icon: '⚙️',
       accentColor: 'green',
       content: <ProjectTypeDifferences />,
+    },
+    {
+      id: 'phased',
+      label: '단계별 감리',
+      icon: '📊',
+      accentColor: 'orange',
+      content: <PhasedAudit />,
     },
     {
       id: 'process',

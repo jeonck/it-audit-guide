@@ -58,10 +58,6 @@ const ProjectTypeDifferences = () => {
             <p className="mt-1 text-gray-600">모든 사업 유형에 <strong>예비조사 → 현장감리 → 시정조치확인</strong>의 동일한 기본 절차를 적용합니다.</p>
           </div>
           <div>
-            <h4 className="font-semibold text-gray-700">개발 사업의 특수성 (3단계 감리)</h4>
-            <p className="mt-1 text-gray-600">법적 의무사항으로 <strong>요구정의, 설계, 종료</strong>의 3단계 감리를 적용하여 각 단계별 구체적인 항목을 점검합니다.</p>
-          </div>
-          <div>
             <h4 className="font-semibold text-gray-700">상주감리의 독립적 적용</h4>
             <p className="mt-1 text-gray-600">단계별 감리와 별개로, 현장에 상주하며 사업관리 관점의 위험 요인을 지속적으로 검토하고 발주자의 의사결정을 지원하는 자문 역할을 수행합니다.</p>
           </div>
