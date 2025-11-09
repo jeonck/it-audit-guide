@@ -3,6 +3,7 @@ import AuditProcess from './guide/AuditProcess';
 import LegalBasis from './guide/LegalBasis';
 import ProjectTypeDifferences from './guide/ProjectTypeDifferences';
 import PhasedAudit from './guide/PhasedAudit';
+import DesignCheckpoints from './guide/DesignCheckpoints';
 
 export default function Home() {
   const tabs: TabItem[] = [
@@ -26,6 +27,13 @@ export default function Home() {
       icon: '📊',
       accentColor: 'orange',
       content: <PhasedAudit />,
+    },
+    {
+      id: 'design',
+      label: '설계 점검항목',
+      icon: '✏️',
+      accentColor: 'red',
+      content: <DesignCheckpoints />,
     },
     {
       id: 'process',
