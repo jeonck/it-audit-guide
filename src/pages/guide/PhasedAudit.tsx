@@ -15,6 +15,7 @@ const PhasedAudit = () => {
           {/* Block 1 */}
           <div className="flex-1 text-center p-4 bg-blue-100 border-2 border-blue-300 rounded-lg shadow-md">
             <p className="font-bold text-blue-800">요구정의단계</p>
+            <small className="text-blue-700 text-xs mt-1 block">과업내용 반영 적정성</small>
           </div>
 
           {/* Arrow */}
@@ -23,6 +24,7 @@ const PhasedAudit = () => {
           {/* Block 2 */}
           <div className="flex-1 text-center p-4 bg-green-100 border-2 border-green-300 rounded-lg shadow-md">
             <p className="font-bold text-green-800">설계단계</p>
+            <small className="text-green-700 text-xs mt-1 block">과업내용 반영 여부 및 대비표의 구체화 여부</small>
           </div>
 
           {/* Arrow */}
@@ -31,6 +33,7 @@ const PhasedAudit = () => {
           {/* Block 3 */}
           <div className="flex-1 text-center p-4 bg-purple-100 border-2 border-purple-300 rounded-lg shadow-md">
             <p className="font-bold text-purple-800">종료단계</p>
+            <small className="text-purple-700 text-xs mt-1 block">과업내용 이행 여부</small>
           </div>
         </div>
       </div>
