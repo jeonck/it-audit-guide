@@ -9,6 +9,32 @@ const PhasedAudit = () => {
         </p>
       </div>
 
+      <div className="my-12 p-8 bg-gray-50 rounded-xl border border-gray-200">
+        <h3 className="text-xl font-bold text-gray-800 mb-6 text-center">3단계 감리 프로세스</h3>
+        <div className="flex items-center justify-center space-x-2 md:space-x-4">
+          {/* Block 1 */}
+          <div className="flex-1 text-center p-4 bg-blue-100 border-2 border-blue-300 rounded-lg shadow-md">
+            <p className="font-bold text-blue-800">요구정의단계</p>
+          </div>
+
+          {/* Arrow */}
+          <div className="flex-shrink-0 text-2xl font-bold text-gray-500">→</div>
+
+          {/* Block 2 */}
+          <div className="flex-1 text-center p-4 bg-green-100 border-2 border-green-300 rounded-lg shadow-md">
+            <p className="font-bold text-green-800">설계단계</p>
+          </div>
+
+          {/* Arrow */}
+          <div className="flex-shrink-0 text-2xl font-bold text-gray-500">→</div>
+
+          {/* Block 3 */}
+          <div className="flex-1 text-center p-4 bg-purple-100 border-2 border-purple-300 rounded-lg shadow-md">
+            <p className="font-bold text-purple-800">종료단계</p>
+          </div>
+        </div>
+      </div>
+
       <div className="overflow-x-auto">
         <div className="min-w-full inline-block align-middle">
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
