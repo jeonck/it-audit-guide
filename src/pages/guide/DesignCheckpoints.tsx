@@ -9,6 +9,18 @@ const DesignCheckpoints = () => {
         </p>
       </div>
 
+      {/* 3. 핵심 점검 사항 */}
+      <div className="p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
+        <h3 className="text-xl font-bold text-yellow-800 mb-3">설계 단계 감리 시 핵심 점검 사항</h3>
+        <p className="text-yellow-900">
+          설계 단계 감리 시, 감리원은 <strong>대비표(요구사항 추적표)</strong>를 중점적으로 검토해야 합니다. 대비표는 개별 요구사항에 대한 설계 결과를 반영하며, 요구사항 ID 단위로 설계 내용과 검사 대상 및 검사 기준을 추적하고 점검할 수 있는 문서여야 합니다.
+        </p>
+        <ul className="list-disc list-inside text-yellow-900 mt-2 space-y-1">
+          <li>설계 산출물 정보 누락 여부, 각 요구사항 ID에 대응하는 세부 검사항목과 검사기준의 완전성 등 대비표의 형식적 구성 요건을 점검합니다.</li>
+          <li>설계 산출물이 분석 단계 산출물과 일관성을 유지하는지, 구현 단계에 활용 가능한 수준으로 작성되었는지 여부를 전반적으로 점검해야 합니다.</li>
+        </ul>
+      </div>
+
       {/* 1. 구조적/정보공학적 개발 모델 */}
       <div className="p-6 bg-white rounded-lg shadow-md">
         <h3 className="text-2xl font-bold text-gray-800 mb-4">1. 구조적/정보공학적 개발 모델 (설계 시점)</h3>
@@ -105,20 +117,3 @@ const DesignCheckpoints = () => {
           </div>
         </div>
       </div>
-
-      {/* 3. 핵심 점검 사항 */}
-      <div className="p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
-        <h3 className="text-xl font-bold text-yellow-800 mb-3">설계 단계 감리 시 핵심 점검 사항</h3>
-        <p className="text-yellow-900">
-          설계 단계 감리 시, 감리원은 <strong>대비표(요구사항 추적표)</strong>를 중점적으로 검토해야 합니다. 대비표는 개별 요구사항에 대한 설계 결과를 반영하며, 요구사항 ID 단위로 설계 내용과 검사 대상 및 검사 기준을 추적하고 점검할 수 있는 문서여야 합니다.
-        </p>
-        <ul className="list-disc list-inside text-yellow-900 mt-2 space-y-1">
-          <li>설계 산출물 정보 누락 여부, 각 요구사항 ID에 대응하는 세부 검사항목과 검사기준의 완전성 등 대비표의 형식적 구성 요건을 점검합니다.</li>
-          <li>설계 산출물이 분석 단계 산출물과 일관성을 유지하는지, 구현 단계에 활용 가능한 수준으로 작성되었는지 여부를 전반적으로 점검해야 합니다.</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
-export default DesignCheckpoints;
