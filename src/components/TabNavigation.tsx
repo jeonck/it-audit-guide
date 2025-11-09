@@ -5,7 +5,7 @@ export interface TabItem {
   label: string;
   icon: string;
   content: ReactNode;
-  accentColor?: 'blue' | 'purple' | 'green' | 'orange';
+  accentColor?: 'blue' | 'purple' | 'green' | 'orange' | 'red';
 }
 
 interface TabNavigationProps {
