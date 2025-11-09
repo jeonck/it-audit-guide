@@ -64,14 +64,13 @@ const DesignCheckpoints = () => {
               <li>이전/다음 단계 반복계획 수립의 적정성</li>
               <li>품질보증활동 수행의 적정성</li>
               <li>사용자 요구사항 및 산출물 간의 추적성, 일관성</li>
+              <li>시스템 전환 전략 수립의 적정성</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  );
-};
 
-export default DesignCheckpoints;      {/* 2. 객체지향/컴포넌트기반 개발 모델 */}
+      {/* 2. 객체지향/컴포넌트기반 개발 모델 */}
       <div className="p-6 bg-white rounded-lg shadow-md">
         <h3 className="text-2xl font-bold text-gray-800 mb-4">2. 객체지향/컴포넌트기반 개발 모델 (분석/설계 시점)</h3>
         <div className="grid md:grid-cols-2 gap-x-8 gap-y-6">
@@ -118,3 +117,8 @@ export default DesignCheckpoints;      {/* 2. 객체지향/컴포넌트기반 �
           </div>
         </div>
       </div>
+    </div>
+  );
+};
+
+export default DesignCheckpoints;
