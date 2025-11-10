@@ -72,6 +72,7 @@ const InspectionCoreComponents: React.FC = () => {
       <p className="mb-4">
         점검프레임워크는 개념모델을 바탕으로 도출된 핵심 구성 요소 중 하나입니다. 이 프레임워크는 사업유형/감리시점, 감리영역, 감리관점/점검기준을 통합하여 구성됩니다.
       </p>
+      <img src="/정보시스템감리점검프레임워크.png" alt="정보시스템감리점검프레임워크" className="my-4 rounded-lg shadow-md" />
       <ul className="list-disc list-inside mb-4 ml-4">
         <li><strong>사업유형/감리시점:</strong> 감리 대상 사업의 유형(예: 개발, 운영 등)과 이에 적용되는 방법론에 따른 감리 시점(예: 분석, 설계 등)을 구분합니다.</li>
         <li><strong>감리영역:</strong> 감리 영역을 나누고 영역별로 무엇을 점검해야 하는지 정의하는 구분입니다 (예: 사업관리, 아키텍처 등).</li>

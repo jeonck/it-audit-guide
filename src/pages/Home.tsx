@@ -4,7 +4,8 @@ import LegalBasis from './guide/LegalBasis';
 import ProjectTypeDifferences from './guide/ProjectTypeDifferences';
 import PhasedAudit from './guide/PhasedAudit';
 import DesignCheckpoints from './guide/DesignCheckpoints';
-import InspectionCoreComponents from './guide/InspectionCoreComponents'; // Import the new component
+import InspectionCoreComponents from './guide/InspectionCoreComponents';
+import AuditCriteria from './guide/AuditCriteria'; // Import the new component
 
 export default function Home() {
   const tabs: TabItem[] = [
@@ -30,11 +31,18 @@ export default function Home() {
       content: <PhasedAudit />,
     },
     {
-      id: 'core-components', // New tab ID
-      label: '핵심 구성 요소', // New tab label
-      icon: '🧩', // New tab icon
-      accentColor: 'blue', // New tab accent color
-      content: <InspectionCoreComponents />, // New tab content
+      id: 'core-components',
+      label: '핵심 구성 요소',
+      icon: '🧩',
+      accentColor: 'blue',
+      content: <InspectionCoreComponents />,
+    },
+    {
+      id: 'audit-criteria', // New tab ID
+      label: '감리관점/점검기준', // New tab label
+      icon: '🔍', // New tab icon
+      accentColor: 'purple', // New tab accent color
+      content: <AuditCriteria />, // New tab content
     },
     {
       id: 'design',
