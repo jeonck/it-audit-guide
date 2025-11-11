@@ -5,7 +5,8 @@ import ProjectTypeDifferences from './guide/ProjectTypeDifferences';
 import PhasedAudit from './guide/PhasedAudit';
 import DesignCheckpoints from './guide/DesignCheckpoints';
 import InspectionCoreComponents from './guide/InspectionCoreComponents';
-import AuditCriteria from './guide/AuditCriteria'; // Import the new component
+import AuditCriteria from './guide/AuditCriteria';
+import ClosingStageChecklist from './guide/ClosingStageChecklist'; // Import the new component
 
 export default function Home() {
   const tabs: TabItem[] = [
@@ -38,11 +39,18 @@ export default function Home() {
       content: <InspectionCoreComponents />,
     },
     {
-      id: 'audit-criteria', // New tab ID
-      label: '감리관점/점검기준', // New tab label
-      icon: '🔍', // New tab icon
-      accentColor: 'purple', // New tab accent color
-      content: <AuditCriteria />, // New tab content
+      id: 'audit-criteria',
+      label: '감리관점/점검기준',
+      icon: '🔍',
+      accentColor: 'purple',
+      content: <AuditCriteria />,
+    },
+    {
+      id: 'closing-checklist', // New tab ID
+      label: '종료단계 점검항목', // New tab label
+      icon: '🏁', // New tab icon
+      accentColor: 'green', // New tab accent color
+      content: <ClosingStageChecklist />, // New tab content
     },
     {
       id: 'design',
